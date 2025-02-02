@@ -6,8 +6,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
-            label = "Default";
+        default {
 
             bindings = <
     &kp Q        &kp W        &kp F       &kp P         &kp B                                       &kp J         &kp L        &lt WINNAV U  &kp Y       &kp SEMI
@@ -18,8 +17,7 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
-        nav_layer {
-            label = "Navigation";
+        nav {
 
             bindings = <
     &kp ESC      &kp PG_UP    &kp UP      &kp PG_DN     &trans                                      &kp ASTRK     &kp N7       &kp N8        &kp N9      &kp MINUS
@@ -29,8 +27,7 @@
             >;
         };
 
-        sym_layer {
-            label = "Symbols";
+        sym {
 
             bindings = <
     &kp EXCL     &kp AT       &kp HASH        &kp DLLR         &kp PRCNT                                   &kp CARET     &kp AMPS          &kp ASTRK     &kp UNDER   &kp EQUAL
@@ -40,8 +37,7 @@
             >;
         };
 
-        func_layer {
-            label = "Function";
+        func {
 
             bindings = <
     &bootloader  &kp LS(PG_UP) &kp LS(UP)   &kp LS(PG_DN) &trans                                         &kp C_MUTE       &kp F7       &kp F8        &kp F9      &kp F10
@@ -51,8 +47,7 @@
             >;
         };
 
-        media_layer {
-            label = "Media";
+        media{
 
             bindings = <
     &trans       &trans       &trans        &trans            &trans                                      &trans             &bt BT_PRV        &bt BT_NXT         &trans         &trans
@@ -62,8 +57,7 @@
             >;
         };
 
-        mouse_layer {
-            label = "Mouse";
+        mouse {
 
             bindings = <
     &bootloader &trans      &trans      &trans      &trans                                           &trans      &trans      &trans      &trans      &trans
@@ -73,8 +67,7 @@
             >;
         };
 
-        winnav_layer {
-            label = "Win Navigation";
+        winnav {
 
             bindings = <
     &trans       &trans       &kp LG(UP)   &trans        &trans                                      &trans      &trans      &trans      &trans      &trans
